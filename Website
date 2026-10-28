@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A CU Native Planting Event</title>
+    <style>
+        :root {
+            --primary-green: #2e7d32;
+            --accent-purple: #7b1fa2;
+            --light-blue: #e0f7fa;
+            --gold-accent: #fbc02d;
+            --text-dark: #212121;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f9f4;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-green);
+        }
+
+        .header-content h1 {
+            color: var(--accent-purple);
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .header-content p.subtitle {
+            font-size: 1.2rem;
+            color: var(--primary-green);
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-left: 6px solid var(--primary-green);
+        }
+
+        .card h2 {
+            color: var(--accent-purple);
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+        }
+
+        .event-details {
+            background-color: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        .date-badge {
+            display: inline-block;
+            background-color: var(--gold-accent);
+            color: #333;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .sponsors {
+            background-color: #e8f5e9;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .sponsors h3 {
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .btn {
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 0.8rem 1.8rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1b5e20;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: var(--primary-green);
+            color: var(--white);
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>A CU Native Planting Event</h1>
+            <p class="subtitle">Presented by CU Garden and Farm Club</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="event-details">
+            <span class="date-badge">📅 Event Date: March 25th</span>
+            <h2>About the Event</h2>
+            <p>Come learn about Colorado's native plants and get a seed packet to start your own native garden! Across campus, we will be handing out seeds and information. Feel free to ask our volunteers about ideal locations and water requirements for native planting.</p>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <h2>🌸 Native Plants Help Pollinators</h2>
+                <p>Native plant species provide essential nectar and pollen for local bees, butterflies, and other pollinators vital to our Colorado ecosystem.</p>
+            </div>
+            
+            <div class="card">
+                <h2>💧 Reduce Water Usage</h2>
+                <p>Colorado native plants are naturally adapted to the local climate and soil, drastically cutting down the need for supplemental watering once established.</p>
+            </div>
+        </div>
+
+        <div class="sponsors">
+            <h3>Sponsored By</h3>
+            <p><strong>CU in The Garden</strong></p>
+        </div>
+
+        <div class="cta-section">
+            <a href="#" class="btn" onclick="alert('Event added to your reminder list!')">Get Reminded for March 25th</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; CU Garden and Farm Club | CU in The Garden</p>
+    </footer>
+
+</body>
+</html>
